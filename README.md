@@ -29,8 +29,7 @@ This repository contains sample code for the following scenarios:
 
 ## Prerequisites
 
-Must have python 2.7 or later installed and available.
-Must have bash shell script environment.
+Must have python3.x and above
 
 ## Building & Running
 
@@ -39,13 +38,19 @@ Must have bash shell script environment.
 Just clone and activate. For example:
 
   1. clone this GitHub repository
-  2. `source ./env.sh activate`
+  2. python -m venv venv/
+  3. source venv/bin/activate
+  4. pip install -r requirements.txt
 
 ### Running the Examples
 
 To try individual examples, build the project from source and then run them like the following:
 
-    python src/simple_send.py amqp://<msg_backbone_ip:port>
+    python src/simple_send.py /
+    -u amqp://<msg_backbone_ip:port> /
+    -o <username> /
+    -p <password> /
+    -a <que_name>     
 
 ## Contributing
 
