@@ -17,7 +17,7 @@ class Recv(MessagingHandler):
         # authentication credentials
         self.username = username
         self.password = password
-        
+
         # messaging counters
         self.expected = count
         self.received = 0
@@ -26,9 +26,9 @@ class Recv(MessagingHandler):
         # select authentication options for connection
         if self.username:
             # basic username and password authentication
-            conn = event.container.connect(url=self.url, 
-                                           user=self.username, 
-                                           password=self.password, 
+            conn = event.container.connect(url=self.url,
+                                           user=self.username,
+                                           password=self.password,
                                            allow_insecure_mechs=True)
         else:
             # Anonymous authentication
@@ -74,9 +74,5 @@ if __name__ == '__main__':
                        count=10,
                        username=config['username'],
                        password=config['password'])).run()
-    except KeyboardInterrupt: pass
-
-
-
-
-
+    except KeyboardInterrupt:
+        pass
