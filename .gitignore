@@ -2,4 +2,5 @@ devenv/dev_python_env/
 devenv/tools/
 venv/
 __pycache__/
+credentials.json
 
