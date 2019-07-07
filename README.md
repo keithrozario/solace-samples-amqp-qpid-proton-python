@@ -46,11 +46,7 @@ Just clone and activate. For example:
 
 To try individual examples, build the project from source and then run them like the following:
 
-    python src/simple_send.py /
-    -u amqp://<msg_backbone_ip:port> /
-    -o <username> /
-    -p <password> /
-    -a <que_name>     
+    python src/simple_send.py -u amqp://<msg_backbone_ip:port>  -o <username> -p <password> -a <que_name>     
 
 ## Contributing
 
